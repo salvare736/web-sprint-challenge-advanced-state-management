@@ -168,16 +168,16 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What problem does the context API help solve?
 
-  Ans) 
+  Ans) Context API helps us developers avoid excessively long chains of prop drilling, which would otherwise result in rather unreadable code.
 
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
-  Ans) 
+  Ans) The store, or the 'single source of truth', refers to the global state, and it can be used to pass data anywhere it's needed in our application. The 'actions' and 'reducers' work in tandem to handle different cases throughout the application, and we use said cases to manipulate the singular data source within the store (so long as we take precautions not to mutate our original data).
 
 3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
 
-  Ans) 
+  Ans) The 'redux-thunk' dependency is middleware that allows us to carry out asynchronous functions within our 'actions' file - this is typically used to carry out API requests in what would normally be a synchronous environment.
 
 4. What is your favorite state management system you've learned and this sprint? Please explain why!
 
-  Ans) 
+  Ans) My favoroite state management system is redux. The way it just lets me easily manage a single source of global state and pass said state to any component in my app is way too convenient to pass up.
