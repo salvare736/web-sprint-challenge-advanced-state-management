@@ -11,18 +11,18 @@ export const fetchSmurfs = () => {
         axios
             .get('http://localhost:3333/smurfs')
             .then(resp => {
-                console.log(resp);
+                dispatch({ type: FETCH_SMURFS_SUCCESS, payload: resp.data });
             })
             .catch(err => {
-                console.log(err);
+                dispatch({ type: FETCH_SMURFS_FAILURE, payload: err.message });
             });
     };
 }
 export const addSmurf = (smurf) => {
-    return({ type: ADD_SMURF, payload:smurf });
+    return({ type: ADD_SMURF, payload: smurf });
 }
 export const setError = (error) => {
-    return ({ type: SET_ERROR, payload:error });
+    return ({ type: SET_ERROR, payload: error });
 }
 
 //Task List:

@@ -15,11 +15,26 @@ export const initialState = {
 const reducer = (state = initialState, action) => {
     switch(action.type) {
         case FETCH_SMURFS_START:
-            return state;
+            return {
+                ...state,
+                isLoading: true,
+                error: '',
+                smurfs: []
+            };
         case FETCH_SMURFS_SUCCESS:
-            return state;
+            return {
+                ...state,
+                isLoading: false,
+                error: '',
+                smurfs: action.payload
+            };
         case FETCH_SMURFS_FAILURE:
-            return state;
+            return {
+                ...state,
+                isLoading: false,
+                errr: action.payload,
+                smurfs: []
+            };
         case ADD_SMURF:
             return state;
         case SET_ERROR:
