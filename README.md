@@ -52,8 +52,8 @@ In this challenge, you are to build a Smurfs village database utilizing Redux as
   * [X] Add in a reducer case to accomidate the start of a smurf fetch.
   * [X] Add in a reducer case to accomidate the successful smurf api fetch.
   * [X] Add in a reducer cases to accomidate the failed smurf api fetch.
-  * [ ] Add in a reducer case to accomidate adding a smurf (including the name, nickname, position, summary and an internally generated id) into your smurf list.
-  * [ ] Add in a reducer case that adds in a value to the error message.
+  * [X] Add in a reducer case to accomidate adding a smurf (including the name, nickname, position, summary and an internally generated id) into your smurf list.
+  * [X] Add in a reducer case that adds in a value to the error message.
 
 #### index.js
   Connect your application to reducer through redux with the thunk and logger middleware packages attached.
@@ -62,8 +62,8 @@ In this challenge, you are to build a Smurfs village database utilizing Redux as
   Add in the action creators and action constants needed to add a smurf to state and fetch smurfs from the server. **If at all possible, add in action cases one at a time, instead of all at once. Test your state connects and reducer cases as nessisary.**
 
   * [X] Add a thunk action called fetchSmurfs that triggers a loading status display in our application, performs an axios call to retreive smurfs from our server, saves the result of that call to our state and shows an error if one is made.
-  * [ ] Add a standard action that allows us to add new smurf (including the name, nickname, position, summary).
-  * [ ] Add a standard action that allows us to set the value of the error message slice of state.
+  * [X] Add a standard action that allows us to add new smurf (including the name, nickname, position, summary).
+  * [X] Add a standard action that allows us to set the value of the error message slice of state.
   
 #### App.js
   Connect this component to redux **passing in your fetchSmurfs action only.** 
@@ -84,10 +84,10 @@ In this challenge, you are to build a Smurfs village database utilizing Redux as
 #### components/AddForm.js
   Connect this component to redux **passing in your error message state value, setError action and addSmurf action.** Complete the form handling code.
 
-  * [ ] Connect the errorMessage, setError and addSmurf actions to the AddForm component.
-  * [ ] Replace all instances of the errorMessage static variable with your error message state value. 
-  * [ ] Within the handleSubmit function, replace the static assignment to errorMessage with a call to the setError action. Test that an error is displayed when this validation code fails.
-  * [ ] Within the handleSubmit function, call your addSmurf action with the smurf name, position, nickname and summury passed as arguments. Test that a smurf is correctly added to when the form is submitted.
+  * [X] Connect the errorMessage, setError and addSmurf actions to the AddForm component.
+  * [X] Replace all instances of the errorMessage static variable with your error message state value. 
+  * [X] Within the handleSubmit function, replace the static assignment to errorMessage with a call to the setError action. Test that an error is displayed when this validation code fails.
+  * [X] Within the handleSubmit function, call your addSmurf action with the smurf name, position, nickname and summury passed as arguments. Test that a smurf is correctly added to when the form is submitted.
 
   **Notes:**
 
@@ -114,8 +114,8 @@ In this challenge, you are to build a Smurfs village database utilizing Redux as
 
 ##### GET '/smurfs'
 
-- [ ] Retrieve an array all the Smurfs in the Smurf DB by writing a `GET` to the endpoint `http://localhost:3333/smurfs`.
-- [ ] Double check that your response from the server is an array of smurfs.
+- [X] Retrieve an array all the Smurfs in the Smurf DB by writing a `GET` to the endpoint `http://localhost:3333/smurfs`.
+- [X] Double check that your response from the server is an array of smurfs.
 
 ```js
 [
@@ -130,7 +130,7 @@ In this challenge, you are to build a Smurfs village database utilizing Redux as
 ```
 
 
-- [ ] Double check to make sure that a smurf is created correctly once your functionality is built out. Initially Poppa and Smurfette will be in the array.
+- [X] Double check to make sure that a smurf is created correctly once your functionality is built out. Initially Poppa and Smurfette will be in the array.
 
 **HINT** if you are going to be working on Stretch Problem, you'll need to use that unique `id`.
 
@@ -167,6 +167,17 @@ Example of object created in Smurf DB:
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
 1. What problem does the context API help solve?
+
+  Ans) 
+
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+  Ans) 
+
 3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
+
+  Ans) 
+
 4. What is your favorite state management system you've learned and this sprint? Please explain why!
+
+  Ans) 
